@@ -55,13 +55,11 @@ Results in:
   target: Result,
   logs: [
     {
-      Message: The Message,
-      Level: Error,
-      Logger: Tests,
-      KeyValues: {}
+      Error: The Message,
+      Logger: Tests
     }
   ]
 }
 ```
-<sup><a href='/src/Tests/Tests.Usage.verified.txt#L1-L11' title='Snippet source file'>snippet source</a> | <a href='#snippet-Tests.Usage.verified.txt' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.Usage.verified.txt#L1-L9' title='Snippet source file'>snippet source</a> | <a href='#snippet-Tests.Usage.verified.txt' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->

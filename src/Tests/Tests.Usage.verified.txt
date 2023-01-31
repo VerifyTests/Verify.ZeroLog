@@ -2,10 +2,8 @@
   target: Result,
   logs: [
     {
-      Message: The Message,
-      Level: Error,
-      Logger: Tests,
-      KeyValues: {}
+      Error: The Message,
+      Logger: Tests
     }
   ]
 }
