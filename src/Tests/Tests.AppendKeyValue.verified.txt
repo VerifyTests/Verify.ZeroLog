@@ -1,1 +1,13 @@
-﻿
+﻿{
+  target: Result,
+  logs: [
+    {
+      Message: The Message,
+      Level: Error,
+      Logger: Tests,
+      KeyValues: {
+        key: value
+      }
+    }
+  ]
+}
