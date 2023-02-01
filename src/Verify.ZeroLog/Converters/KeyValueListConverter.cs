@@ -1,6 +1,4 @@
-﻿using System.Globalization;
-
-class KeyValueListConverter :
+﻿class KeyValueListConverter :
     WriteOnlyJsonConverter<KeyValueList>
 {
     public override void Write(VerifyJsonWriter writer, KeyValueList list)
@@ -8,33 +6,43 @@ class KeyValueListConverter :
         writer.WriteStartObject();
         foreach (var value in list)
         {
-            writer.WriteMember(list, GetValue(value.Value), value.Key);
+            writer.WriteMember(list, GetValue(value), value.Key);
         }
         writer.WriteEndObject();
     }
 
-    static object GetValue(ReadOnlySpan<char> span)
+    static object GetValue(LoggedKeyValue value)
     {
-        if (DateTime.TryParseExact(span, "yyyy-MM-dd HH:mm:ss", null, DateTimeStyles.None, out var dateTime))
+        if (value.TryGetValue<DateTime>(out var dateTime))
         {
             return dateTime;
         }
 
-        if (DateOnly.TryParseExact(span, "yyyy-MM-dd", null, DateTimeStyles.None, out var date))
+        if (value.TryGetValue<DateTimeOffset>(out var dateTimeOffset))
+        {
+            return dateTimeOffset;
+        }
+
+        if (value.TryGetValue<Date>(out var date))
         {
             return date;
         }
 
-        if (TimeSpan.TryParseExact(span, @"hh\:mm\:ss\.fffffff", null, out var timeSpan))
+        if (value.TryGetValue<TimeSpan>(out var timeSpan))
         {
             return timeSpan;
         }
 
-        if (TimeOnly.TryParseExact(span, @"HH\:mm\:ss\.fffffff", out var time))
+        if (value.TryGetValue<Time>(out var time))
         {
             return time;
         }
 
-        return span.ToString();
+        if (value.TryGetValue<Guid>(out var guid))
+        {
+            return guid;
+        }
+
+        return value.Value.ToString();
     }
 }

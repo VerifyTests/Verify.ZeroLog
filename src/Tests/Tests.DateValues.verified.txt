@@ -4,7 +4,8 @@
     Logger: Tests,
     KeyValues: {
       Date: Date_1,
-      DateTime: DateTime_1
+      DateTime: DateTime_1,
+      DateTimeOffset: DateTimeOffset_1
     }
   }
 ]

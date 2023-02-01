@@ -109,7 +109,7 @@ public class Tests
         logger.Error()
             .AppendKeyValue("Date", new DateOnly(2000, 1, 1))
             .AppendKeyValue("DateTime", DateTime.Now)
-            //.AppendKeyValue("DateTimeOffset", DateTimeOffset.Now)
+            .AppendKeyValue("DateTimeOffset", DateTimeOffset.Now)
             .Append("The Message")
             .Log();
 
