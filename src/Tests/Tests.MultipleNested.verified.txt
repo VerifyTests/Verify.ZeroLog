@@ -1,12 +1,12 @@
 ﻿{
-  target: Result,
+  target: Value,
   logs: [
     {
-      Error: The error,
+      Error: The Message1,
       Logger: Tests
     },
     {
-      Warn: The warning,
+      Error: The Message2,
       Logger: Tests
     }
   ]

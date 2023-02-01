@@ -23,6 +23,11 @@ public static class VerifyZeroLog
                     return null;
                 }
 
+                if (entries.Count ==1)
+                {
+                    return new("log", entries.Single());
+                }
+
                 return new("logs", entries);
             });
 

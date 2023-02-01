@@ -1,0 +1,7 @@
+﻿{
+  target: Value,
+  log: {
+    Error: The Message,
+    Logger: Tests
+  }
+}

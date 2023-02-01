@@ -39,11 +39,12 @@ public Task Usage()
 static string Method()
 {
     var logger = LogManager.GetLogger<Tests>();
-    logger.Error("The Message");
+    logger.Error("The error");
+    logger.Warn("The warning");
     return "Result";
 }
 ```
-<sup><a href='/src/Tests/Tests.cs#L7-L23' title='Snippet source file'>snippet source</a> | <a href='#snippet-usage' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.cs#L7-L24' title='Snippet source file'>snippet source</a> | <a href='#snippet-usage' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 Results in:

@@ -1,0 +1,10 @@
+﻿[
+  {
+    Error: The Message,
+    Logger: Tests,
+    KeyValues: {
+      key1: Scrubbed,
+      key2: value
+    }
+  }
+]
