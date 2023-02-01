@@ -1,0 +1,9 @@
+﻿[
+  {
+    Error: The Message,
+    Logger: Tests,
+    KeyValues: {
+      Guid: Guid_1
+    }
+  }
+]

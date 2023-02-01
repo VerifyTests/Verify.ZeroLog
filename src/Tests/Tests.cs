@@ -99,4 +99,34 @@ public class Tests
         return Verify(RecordingLogger.GetFinishRecording())
             .ScrubMember("key1");
     }
+
+    [Fact]
+    public Task DateValues()
+    {
+        RecordingLogger.Start();
+
+        var logger = LogManager.GetLogger<Tests>();
+        logger.Error()
+            .AppendKeyValue("Date", new DateOnly(2000, 1, 1))
+            .AppendKeyValue("DateTime", DateTime.Now)
+            //.AppendKeyValue("DateTimeOffset", DateTimeOffset.Now)
+            .Append("The Message")
+            .Log();
+
+        return Verify(RecordingLogger.GetFinishRecording());
+    }
+
+    [Fact]
+    public Task GuidValues()
+    {
+        RecordingLogger.Start();
+
+        var logger = LogManager.GetLogger<Tests>();
+        logger.Error()
+            .AppendKeyValue("Guid", Guid.NewGuid())
+            .Append("The Message")
+            .Log();
+
+        return Verify(RecordingLogger.GetFinishRecording());
+    }
 }

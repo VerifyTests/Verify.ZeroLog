@@ -1,0 +1,10 @@
+﻿[
+  {
+    Error: The Message,
+    Logger: Tests,
+    KeyValues: {
+      Date: Date_1,
+      DateTime: DateTime_1
+    }
+  }
+]
