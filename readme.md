@@ -1,6 +1,6 @@
 # <img src="/src/icon.png" height="30px"> Verify.ZeroLog
 
-[![Build status](https://ci.appveyor.com/api/projects/status/bgvkfjn26l5b4kba?svg=true)](https://ci.appveyor.com/project/SimonCropp/verify-zerolog)
+[![Build status](https://ci.appveyor.com/api/projects/status/3oa1pc52a38ncma6?svg=true)](https://ci.appveyor.com/project/SimonCropp/verify-zerolog)
 [![NuGet Status](https://img.shields.io/nuget/v/Verify.ZeroLog.svg)](https://www.nuget.org/packages/Verify.ZeroLog/)
 
 Extends [Verify](https://github.com/VerifyTests/Verify) to allow verification of [ZeroLog](https://github.com/Abc-Arbitrage/ZeroLog) bits.
