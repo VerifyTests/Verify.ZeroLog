@@ -26,16 +26,16 @@ public static class VerifyZeroLog
                 return new("logs", entries);
             });
 
-        LogManager.Initialize(new()
+        if (LogManager.Configuration is { } config)
         {
-            RootLogger =
-            {
-                Appenders =
-                {
-                    new VerifyAppender()
-                }
-            },
-            UseBackgroundThread = false,
-        });
+            config.RootLogger.Appenders.Add(new VerifyAppender());
+            config.ApplyChanges();
+        }
+        else
+        {
+            config = ZeroLogConfiguration.CreateTestConfiguration();
+            config.RootLogger.Appenders.Add(new VerifyAppender());
+            LogManager.Initialize(config);
+        }
     }
 }

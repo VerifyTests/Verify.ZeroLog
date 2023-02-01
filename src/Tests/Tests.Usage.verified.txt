@@ -2,7 +2,8 @@
   target: Result,
   logs: [
     {
-      Error: The Message
+      Error: The Message,
+      Logger: Tests
     }
   ]
 }
