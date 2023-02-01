@@ -8,10 +8,8 @@ class KeyValueListConverter :
         writer.WriteStartObject();
         foreach (var value in list)
         {
-            var readOnlySpan = value.Value;
-            writer.WriteMember(list, GetValue(readOnlySpan), value.Key);
+            writer.WriteMember(list, GetValue(value.Value), value.Key);
         }
-
         writer.WriteEndObject();
     }
 
