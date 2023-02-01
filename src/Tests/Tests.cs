@@ -59,6 +59,6 @@ public class Tests
             .Append("The Message")
             .Log();
 
-        return Verify("Result");
+        return Verify(RecordingLogger.GetFinishRecording());
     }
 }
