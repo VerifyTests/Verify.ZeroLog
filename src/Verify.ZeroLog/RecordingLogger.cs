@@ -15,19 +15,20 @@ public static class RecordingLogger
         tracker?.Enqueue(logEvent);
     }
 
-    public static bool TryFinishRecording([NotNullWhen(true)] out IEnumerable<LoggedMessage>? entries)
+    public static IReadOnlyCollection<LoggedMessage> GetFinishRecording()
     {
-        var events = local.Value;
-
-        if (events is null)
+        if (TryFinishRecording(out var entries))
         {
-            local.Value = null;
-            entries = null;
-            return false;
+            return entries;
         }
 
-        entries = events.ToArray();
+        return Array.Empty<LoggedMessage>();
+    }
+
+    public static bool TryFinishRecording([NotNullWhen(true)] out IReadOnlyCollection<LoggedMessage>? entries)
+    {
+        entries = local.Value;
         local.Value = null;
-        return true;
+        return entries != null;
     }
 }

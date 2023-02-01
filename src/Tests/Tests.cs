@@ -30,6 +30,25 @@ public class Tests
     }
 
     [Fact]
+    public Task Single()
+    {
+        RecordingLogger.Start();
+        var logger = LogManager.GetLogger<Tests>();
+        logger.Error("The Message");
+        return Verify(RecordingLogger.GetFinishRecording());
+    }
+
+    [Fact]
+    public Task Multiple()
+    {
+        RecordingLogger.Start();
+        var logger = LogManager.GetLogger<Tests>();
+        logger.Error("The Message1");
+        logger.Error("The Message2");
+        return Verify(RecordingLogger.GetFinishRecording());
+    }
+
+    [Fact]
     public Task AppendKeyValue()
     {
         RecordingLogger.Start();
