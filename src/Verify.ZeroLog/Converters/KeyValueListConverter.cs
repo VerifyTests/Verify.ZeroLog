@@ -8,6 +8,7 @@
         {
             writer.WriteMember(list, GetValue(value), value.Key);
         }
+
         writer.WriteEndObject();
     }
 
