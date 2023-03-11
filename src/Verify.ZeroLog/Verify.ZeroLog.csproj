@@ -5,7 +5,7 @@
     <RootNamespace>Verify.ZeroLog</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Argon" Version="0.4.0" />
+    <PackageReference Include="Argon" Version="0.5.0" />
     <PackageReference Include="ZeroLog" Version="2.1.0" />
     <Using Remove="System.Net.Http" />
     <PackageReference Include="Verify" Version="19.11.1" />
