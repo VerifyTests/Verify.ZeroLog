@@ -1,5 +1,5 @@
 class VerifyAppender : Appender
 {
     public override void WriteMessage(LoggedMessage message) =>
-        RecordingLogger.Add(message.Clone());
+        Recording.Add("logs", message.Clone());
 }

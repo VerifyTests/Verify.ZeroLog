@@ -1,7 +1,4 @@
-﻿using VerifyTests.ZeroLog;
-using ZeroLog;
-
-[UsesVerify]
+﻿[UsesVerify]
 public class Tests
 {
     #region usage
@@ -9,7 +6,7 @@ public class Tests
     [Fact]
     public Task Usage()
     {
-        RecordingLogger.Start();
+        Recording.Start();
         var result = Method();
 
         return Verify(result);
@@ -28,23 +25,23 @@ public class Tests
     [Fact]
     public Task Empty()
     {
-        RecordingLogger.Start();
+        Recording.Start();
         return Verify("Result");
     }
 
     [Fact]
     public Task Single()
     {
-        RecordingLogger.Start();
+        Recording.Start();
         var logger = LogManager.GetLogger<Tests>();
         logger.Error("The Message");
-        return Verify(RecordingLogger.GetFinishRecording());
+        return Verify(Recording.Stop());
     }
 
     [Fact]
     public Task SingleNested()
     {
-        RecordingLogger.Start();
+        Recording.Start();
         var logger = LogManager.GetLogger<Tests>();
         logger.Error("The Message");
         return Verify("Value");
@@ -53,27 +50,27 @@ public class Tests
     [Fact]
     public Task Multiple()
     {
-        RecordingLogger.Start();
+        Recording.Start();
         var logger = LogManager.GetLogger<Tests>();
         logger.Error("The Message1");
         logger.Error("The Message2");
-        return Verify(RecordingLogger.GetFinishRecording());
+        return Verify();
     }
 
     [Fact]
     public Task MultipleNested()
     {
-        RecordingLogger.Start();
+        Recording.Start();
         var logger = LogManager.GetLogger<Tests>();
         logger.Error("The Message1");
         logger.Error("The Message2");
-        return Verify("Value");
+        return Verify();
     }
 
     [Fact]
     public Task AppendKeyValue()
     {
-        RecordingLogger.Start();
+        Recording.Start();
 
         var logger = LogManager.GetLogger<Tests>();
         logger.Error()
@@ -81,13 +78,13 @@ public class Tests
             .Append("The Message")
             .Log();
 
-        return Verify(RecordingLogger.GetFinishRecording());
+        return Verify();
     }
 
     [Fact]
     public Task ScrubbedKey()
     {
-        RecordingLogger.Start();
+        Recording.Start();
 
         var logger = LogManager.GetLogger<Tests>();
         logger.Error()
@@ -96,30 +93,30 @@ public class Tests
             .Append("The Message")
             .Log();
 
-        return Verify(RecordingLogger.GetFinishRecording())
+        return Verify(Recording.Stop())
             .ScrubMember("key1");
     }
 
     [Fact]
     public Task DateValues()
     {
-        RecordingLogger.Start();
+        Recording.Start();
 
         var logger = LogManager.GetLogger<Tests>();
         logger.Error()
-            .AppendKeyValue("Date", new DateOnly(2000, 1, 1))
+            .AppendKeyValue("Date", new Date(2000, 1, 1))
             .AppendKeyValue("DateTime", DateTime.Now)
             .AppendKeyValue("DateTimeOffset", DateTimeOffset.Now)
             .Append("The Message")
             .Log();
 
-        return Verify(RecordingLogger.GetFinishRecording());
+        return Verify();
     }
 
     [Fact]
     public Task GuidValues()
     {
-        RecordingLogger.Start();
+        Recording.Start();
 
         var logger = LogManager.GetLogger<Tests>();
         logger.Error()
@@ -127,6 +124,6 @@ public class Tests
             .Append("The Message")
             .Log();
 
-        return Verify(RecordingLogger.GetFinishRecording());
+        return Verify();
     }
 }

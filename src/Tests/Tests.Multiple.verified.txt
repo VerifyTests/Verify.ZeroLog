@@ -1,10 +1,12 @@
-﻿[
-  {
-    Error: The Message1,
-    Logger: Tests
-  },
-  {
-    Error: The Message2,
-    Logger: Tests
-  }
-]
+﻿{
+  logs: [
+    {
+      Error: The Message1,
+      Logger: Tests
+    },
+    {
+      Error: The Message2,
+      Logger: Tests
+    }
+  ]
+}

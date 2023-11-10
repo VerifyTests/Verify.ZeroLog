@@ -1,5 +1,4 @@
 ﻿{
-  target: Value,
   logs: [
     {
       Error: The Message1,

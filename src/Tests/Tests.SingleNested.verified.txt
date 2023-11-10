@@ -1,6 +1,6 @@
 ﻿{
   target: Value,
-  log: {
+  logs: {
     Error: The Message,
     Logger: Tests
   }

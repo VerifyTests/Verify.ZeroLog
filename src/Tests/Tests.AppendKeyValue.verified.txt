@@ -1,9 +1,9 @@
-﻿[
-  {
+﻿{
+  logs: {
     Error: The Message,
     Logger: Tests,
     KeyValues: {
       key: value
     }
   }
-]
+}

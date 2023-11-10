@@ -1,5 +1,5 @@
-﻿[
-  {
+﻿{
+  logs: {
     Error: The Message,
     Logger: Tests,
     KeyValues: {
@@ -8,4 +8,4 @@
       DateTimeOffset: DateTimeOffset_1
     }
   }
-]
+}

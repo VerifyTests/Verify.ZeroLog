@@ -33,7 +33,7 @@ public static void Initialize() =>
 [Fact]
 public Task Usage()
 {
-    RecordingLogger.Start();
+    Recording.Start();
     var result = Method();
 
     return Verify(result);
@@ -47,7 +47,7 @@ static string Method()
     return "Result";
 }
 ```
-<sup><a href='/src/Tests/Tests.cs#L7-L26' title='Snippet source file'>snippet source</a> | <a href='#snippet-usage' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.cs#L4-L23' title='Snippet source file'>snippet source</a> | <a href='#snippet-usage' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 Results in:

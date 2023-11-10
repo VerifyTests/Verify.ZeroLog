@@ -1,6 +1,8 @@
 ﻿[
   {
-    Error: The Message,
-    Logger: Tests
+    logs: {
+      Error: The Message,
+      Logger: Tests
+    }
   }
 ]
