@@ -57,7 +57,7 @@ Results in:
 ```txt
 {
   target: Result,
-  logs: [
+  log: [
     {
       Error: The error,
       Logger: Tests
