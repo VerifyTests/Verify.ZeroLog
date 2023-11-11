@@ -1,6 +1,6 @@
 ﻿[
   {
-    logs: {
+    log: {
       Error: The Message,
       Logger: Tests
     }

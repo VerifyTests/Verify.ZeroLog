@@ -1,6 +1,6 @@
 ﻿{
   target: Result,
-  logs: [
+  log: [
     {
       Error: The error,
       Logger: Tests
