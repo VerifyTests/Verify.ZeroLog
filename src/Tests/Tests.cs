@@ -1,6 +1,6 @@
 ﻿public class Tests
 {
-    #region usage
+    #region Usage
 
     [Fact]
     public Task Usage()
