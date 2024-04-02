@@ -1,3 +1,1 @@
-﻿// Global using directives
-
-global using ZeroLog;
+﻿global using ZeroLog;
