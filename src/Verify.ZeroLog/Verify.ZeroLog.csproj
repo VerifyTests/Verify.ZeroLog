@@ -5,9 +5,8 @@
     <RootNamespace>Verify.ZeroLog</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Argon" Version="0.17.0" />
     <PackageReference Include="ZeroLog" Version="2.1.1" />
-    <PackageReference Include="Verify" Version="23.7.1" />
+    <PackageReference Include="Verify" Version="23.7.2" />
     <PackageReference Include="Polyfill" Version="4.4.1" PrivateAssets="all" />
     <PackageReference Include="ProjectDefaults" Version="1.0.126" PrivateAssets="all" />
   </ItemGroup>
