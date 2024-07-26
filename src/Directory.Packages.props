@@ -13,6 +13,6 @@
     <PackageVersion Include="Verify.Xunit" Version="26.1.2" />
     <PackageVersion Include="Xunit" Version="2.9.0" />
     <PackageVersion Include="xunit.runner.visualstudio" Version="2.8.2" />
-    <PackageVersion Include="ZeroLog" Version="2.1.1" />
+    <PackageVersion Include="ZeroLog" Version="2.2.0" />
   </ItemGroup>
 </Project>
