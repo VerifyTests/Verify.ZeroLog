@@ -6,7 +6,6 @@
   <ItemGroup>
     <PackageReference Include="ZeroLog" />
     <PackageReference Include="Verify" />
-    <PackageReference Include="Polyfill" PrivateAssets="all" />
     <PackageReference Include="ProjectDefaults" PrivateAssets="all" />
   </ItemGroup>
 </Project>
