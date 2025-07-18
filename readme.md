@@ -4,7 +4,7 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/3oa1pc52a38ncma6?svg=true)](https://ci.appveyor.com/project/SimonCropp/verify-zerolog)
 [![NuGet Status](https://img.shields.io/nuget/v/Verify.ZeroLog.svg)](https://www.nuget.org/packages/Verify.ZeroLog/)
 
-Extends [Verify](https://github.com/VerifyTests/Verify) to allow verification of [ZeroLog](https://github.com/Abc-Arbitrage/ZeroLog) bits.
+Extends [Verify](https://github.com/VerifyTests/Verify) to allow verification of [ZeroLog](https://github.com/Abc-Arbitrage/ZeroLog) bits.<!-- singleLineInclude: intro. path: /docs/intro.include.md -->
 
 
 **See [Milestones](../../milestones?state=closed) for release notes.**
@@ -15,9 +15,9 @@ Extends [Verify](https://github.com/VerifyTests/Verify) to allow verification of
 
 ### Entity Framework Extensions<!-- include: zzz. path: /docs/zzz.include.md -->
 
-[Entity Framework Extensions](https://entityframework-extensions.net/) is a major sponsor and is proud to contribute to the development this project.
+[Entity Framework Extensions](https://entityframework-extensions.net/?utm_source=simoncropp&utm_medium=Verify.ZeroLog) is a major sponsor and is proud to contribute to the development this project.
 
-[![Entity Framework Extensions](docs/zzz.png)](https://entityframework-extensions.net)<!-- endInclude -->
+[![Entity Framework Extensions](https://raw.githubusercontent.com/VerifyTests/Verify.ZeroLo/refs/heads/main/docs/zzz.png)](https://entityframework-extensions.net/?utm_source=simoncropp&utm_medium=Verify.ZeroLog)<!-- endInclude -->
 
 
 ## NuGet
