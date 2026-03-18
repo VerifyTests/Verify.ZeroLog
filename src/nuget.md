@@ -8,8 +8,12 @@ Extends [Verify](https://github.com/VerifyTests/Verify) to allow verification of
 ## Sponsors
 
 
-### Entity Framework Extensions<!-- include: sponsors. path: /docs/zzz.include.md -->
+### Entity Framework Extensions<!-- include: sponsors. path: /docs/sponsors.include.md -->
 
 [Entity Framework Extensions](https://entityframework-extensions.net/?utm_source=simoncropp&utm_medium=Verify.ZeroLog) is a major sponsor and is proud to contribute to the development this project.
 
-[![Entity Framework Extensions](https://raw.githubusercontent.com/VerifyTests/Verify.ZeroLog/refs/heads/main/docs/zzz.png)](https://entityframework-extensions.net/?utm_source=simoncropp&utm_medium=Verify.ZeroLog)<!-- endInclude -->
+[![Entity Framework Extensions](https://raw.githubusercontent.com/VerifyTests/Verify.ZeroLog/refs/heads/main/docs/zzz.png)](https://entityframework-extensions.net/?utm_source=simoncropp&utm_medium=Verify.ZeroLog)
+
+### Developed using JetBrains IDEs
+
+[![JetBrains logo.](https://resources.jetbrains.com/storage/products/company/brand/logos/jetbrains.svg)](https://jb.gg/OpenSourceSupport)<!-- endInclude -->
