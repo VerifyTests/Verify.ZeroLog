@@ -1,7 +1,7 @@
 # <img src="/src/icon.png" height="30px"> Verify.ZeroLog
 
 [![Discussions](https://img.shields.io/badge/Verify-Discussions-yellow?svg=true&label=)](https://github.com/orgs/VerifyTests/discussions)
-[![Build status](https://ci.appveyor.com/api/projects/status/3oa1pc52a38ncma6?svg=true)](https://ci.appveyor.com/project/SimonCropp/verify-zerolog)
+[![Build status](https://github.com/VerifyTests/Verify.ZeroLog/actions/workflows/build.yml/badge.svg)](https://github.com/VerifyTests/Verify.ZeroLog/actions/workflows/build.yml)
 [![NuGet Status](https://img.shields.io/nuget/v/Verify.ZeroLog.svg)](https://www.nuget.org/packages/Verify.ZeroLog/)
 
 Extends [Verify](https://github.com/VerifyTests/Verify) to allow verification of [ZeroLog](https://github.com/Abc-Arbitrage/ZeroLog) bits.<!-- singleLineInclude: intro. path: /docs/intro.include.md -->
